@@ -1,7 +1,5 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-/* General Body Styling */
 body {
     font-family: 'Merriweather', serif;
     background-image: url("../img/img3.jpg");
@@ -16,9 +14,8 @@ body {
     height: 100%;
 }
 
-/* Header Styling */
 h1 {
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-align: center;
     font-family: 'Roboto Mono', cursive;
     font-size: 2em;
@@ -27,7 +24,6 @@ h1 {
     letter-spacing: 1px;
 }
 
-/* Navigation Menu */
 nav {
     width: 100%;
     background-color: rgb(103, 64, 107);
@@ -52,7 +48,7 @@ ul li {
 ul li a {
     text-decoration: none;
     font-size: 18px;
-    font-family: Merriweather, serif;
+    font-family: 'Merriweather', serif;
     color: white;
     display: block;
     padding: 15px 25px;
@@ -66,7 +62,6 @@ ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Top Menu */
 .top-menu {
     width: 100%;
     height: 40px;
@@ -78,7 +73,6 @@ ul li a:hover {
     line-height: 40px;
 }
 
-/* Slideshow Section */
 .slideshow {
     width: 70%;
     margin: 30px auto;
@@ -90,7 +84,7 @@ ul li a:hover {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     font-family: 'Oswald', sans-serif;
-    color: rgb(64, 107, 103);
+    color: rgb(54, 12, 49);
     transition: transform 0.3s ease;
 }
 
@@ -107,7 +101,6 @@ ul li a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Box Container */
 .box-container {
     display: flex;
     justify-content: space-between;
@@ -117,7 +110,6 @@ ul li a:hover {
     padding: 0 20px;
 }
 
-/* Styling for individual Boxes */
 .box1, .box2, .box3, .box4 {
     width: 22%;
     min-height: 400px;
@@ -133,26 +125,14 @@ ul li a:hover {
     background-position: center;
     background-size: cover;
     height: 100%;
+    text-align: center;
 }
 
-.box1 {
-    background-color: rgb(147, 59, 150);
-}
+.box1 { background-color: rgb(176, 99, 179); }
+.box2 { background-color: rgb(234, 132, 227); }
+.box3 { background-color: rgb(176, 99, 179); }
+.box4 { background-color: rgb(234, 132, 227); }
 
-.box2 {
-    background-color: rgb(255, 180, 244);
-}
-
-.box3 {
-    background-color: rgb(254, 254, 254);
-    color: #333;
-}
-
-.box4 {
-    background-color: rgb(255, 180, 244);
-}
-
-/* Box Image Handling */
 .box1 img, .box2 img, .box3 img, .box4 img {
     width: 100%;
     height: 200px;
@@ -162,13 +142,11 @@ ul li a:hover {
     transition: transform 0.3s ease;
 }
 
-/* Hover Effect for Boxes */
 .box1:hover, .box2:hover, .box3:hover, .box4:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Section */
 .message-box, .contact-box {
     width: 48%;
     padding: 30px;
@@ -190,7 +168,6 @@ ul li a:hover {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Form Styling */
 .form-group {
     margin-bottom: 20px;
 }
@@ -227,7 +204,6 @@ button:hover {
     background-color: rgb(255, 96, 236);
 }
 
-/* Contact Heading & Content */
 .contact-heading {
     margin-bottom: 50px;
 }
@@ -240,7 +216,6 @@ p.contact {
     margin-bottom: 5px;
 }
 
-/* About Section Layout */
 .container {
     width: 100%;
     height: auto;
@@ -251,7 +226,6 @@ p.contact {
     margin-top: 100px;
 }
 
-/* About Image Styling */
 .about-image {
     text-align: center;
     width: 100%;
@@ -276,7 +250,6 @@ p.contact {
     color: #ffffff;
 }
 
-/* About Text Styling */
 .about-text {
     text-align: center;
     margin-left: 20px;
@@ -287,7 +260,6 @@ p.contact {
     color: white;
 }
 
-/* Ensure Text is White for All Text Blocks */
 .text1, .text2 {
     font-family: 'Roboto Mono', monospace;
     color: white;
@@ -299,19 +271,16 @@ p.contact {
     padding: 20px;
 }
 
-/* Placeholder styling */
 .placeholder {
     height: 50px;
 }
 
-.container1 p{
-
- color: white;
-
+.container1 p {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-
-/* Responsiveness: Mobile First Design */
 @media (max-width: 768px) {
     .box-container {
         flex-direction: column;
@@ -337,16 +306,13 @@ p.contact {
         height: auto;
     }
 
-    /* Ensure Navigation Text is Larger on Mobile */
     ul li a {
         font-size: 18px;
         padding: 15px 25px;
     }
 
-    /* About Section */
     .text1, .text2 {
         font-size: 1em;
         padding: 15px;
     }
-
 }
